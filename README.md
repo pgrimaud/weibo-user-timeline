@@ -7,3 +7,4 @@ Bored about chinese documentation? Easily fetch user's weibo timeline without oA
 [![Code Climate](https://codeclimate.com/github/pgrimaud/weibo-user-timeline/badges/gpa.svg)](https://codeclimate.com/github/pgrimaud/weibo-user-timeline)
 [![Test Coverage](https://codeclimate.com/github/pgrimaud/weibo-user-timeline/badges/coverage.svg)](https://codeclimate.com/github/pgrimaud/weibo-user-timeline/coverage)
 [![Issue Count](https://codeclimate.com/github/pgrimaud/weibo-user-timeline/badges/issue_count.svg)](https://codeclimate.com/github/pgrimaud/weibo-user-timeline)
+
