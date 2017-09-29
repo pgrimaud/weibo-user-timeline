@@ -29,7 +29,7 @@ class Hydrator
         foreach ($this->data->channel->item as $xmlItem) {
             $item = new Item();
 
-            $item->setId(md5((string)$xmlItem->pubDate));
+            $item->setItemId(md5((string)$xmlItem->pubDate));
 
             $date = new \DateTime((string)$xmlItem->pubDate);
             $item->setDate($date);

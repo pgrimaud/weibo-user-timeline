@@ -93,3 +93,8 @@ Weibo\Hydrator\Feed Object
 
 )
 ```
+
+## FAQ
+
+### How to find user's Weibo ID ?
+

@@ -79,7 +79,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Item::class, $item);
 
         $this->assertSame('Cute cat in snow and Iron Man : http://t.cn/RtsEHkr :) ​', $item->getTitle());
-        $this->assertSame('c56dad8c9faef724e7447b0d40f829a0', $item->getId());
+        $this->assertSame('c56dad8c9faef724e7447b0d40f829a0', $item->getItemId());
         $this->assertSame('http://weibo.wbdacdn.com/user/6356999361/status4157436061195251.html', $item->getLink());
 
         $this->assertInstanceOf(\Datetime::class, $item->getDate());

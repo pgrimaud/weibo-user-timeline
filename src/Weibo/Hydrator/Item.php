@@ -6,7 +6,7 @@ class Item
     /**
      * @var int
      */
-    public $id;
+    public $itemId;
 
     /**
      * @var string
@@ -31,17 +31,17 @@ class Item
     /**
      * @return int
      */
-    public function getId()
+    public function getItemId()
     {
-        return $this->id;
+        return $this->itemId;
     }
 
     /**
-     * @param int $id
+     * @param int $itemId
      */
-    public function setId($id)
+    public function setItemId($itemId)
     {
-        $this->id = $id;
+        $this->itemId = $itemId;
     }
 
     /**

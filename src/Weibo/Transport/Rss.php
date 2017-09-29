@@ -52,8 +52,8 @@ class Rss
 
             $xml = new \SimpleXMLElement($res->getBody());
             return $xml;
-        } else {
-            throw new WeiboException('Impossible to retrieve formatted endpoint');
         }
+
+        throw new WeiboException('Impossible to retrieve formatted endpoint');
     }
 }
