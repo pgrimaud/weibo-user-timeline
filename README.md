@@ -98,3 +98,6 @@ Weibo\Hydrator\Feed Object
 
 ### How to find user's Weibo ID ?
 
+Go to user's profile page > click on "Photos" or "Album"
+
+UserId is : http://photo.weibo.com/{userId}/talbum/detail/photo_id/xxxxxxxx
