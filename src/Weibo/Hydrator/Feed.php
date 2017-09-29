@@ -59,14 +59,6 @@ class Feed
     }
 
     /**
-     * @param array $items
-     */
-    public function setItems(array $items)
-    {
-        $this->items = $items;
-    }
-
-    /**
      * @param Item $item
      */
     public function addItem(Item $item)

@@ -35,23 +35,19 @@ class Rss
      */
     public function fetch()
     {
-        $client = new Client();
-        $res    = $client->request('GET', $this->endpoint, [
+        $res = $this->client->request('GET', $this->endpoint, [
             'headers' => [
                 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
             ]
         ]);
 
-        if ($res->getStatusCode() === 200) {
-
+        if ((string)$res->getBody()) {
             libxml_use_internal_errors(true);
             $sxe = simplexml_load_string((string)$res->getBody());
 
-            if (!$sxe) {
-                foreach (libxml_get_errors() as $error) {
-                    $message = str_replace("\n", '', $error->message);
-                    throw new WeiboException($message . ' (Probably invalid userId)');
-                }
+            if (!$sxe && $errors = libxml_get_errors()) {
+                $message = str_replace("\n", '', $errors[0]->message);
+                throw new WeiboException($message . ' (Probably invalid userId)');
             }
 
             $xml = new \SimpleXMLElement($res->getBody());

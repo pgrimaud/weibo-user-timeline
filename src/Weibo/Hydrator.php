@@ -27,7 +27,6 @@ class Hydrator
         $feed = $this->generateFeed();
 
         foreach ($this->data->channel->item as $xmlItem) {
-
             $item = new Item();
 
             $item->setId(md5((string)$xmlItem->pubDate));
