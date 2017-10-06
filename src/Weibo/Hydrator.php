@@ -49,7 +49,7 @@ class Hydrator
 
             /** @var \DOMElement $tag */
             foreach ($imageTags as $tag) {
-                $images[] = $tag->getAttribute('src');
+                $images[] = str_replace('http:', 'https:', $tag->getAttribute('src'));
             }
 
             $item->setImages($images);
