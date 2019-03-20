@@ -6,7 +6,7 @@ use Weibo\Exception\WeiboException;
 
 class Rss
 {
-    const WEIBO_ENDPOINT = 'http://rss.weibodangan.com/weibo/rss/';
+    const WEIBO_ENDPOINT = 'https://api.izgq.net/weibo/rss/';
 
     /**
      * @var Client
