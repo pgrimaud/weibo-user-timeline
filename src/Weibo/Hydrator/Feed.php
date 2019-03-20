@@ -1,4 +1,5 @@
 <?php
+
 namespace Weibo\Hydrator;
 
 class Feed

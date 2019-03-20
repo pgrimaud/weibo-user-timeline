@@ -16,6 +16,9 @@
     }
   },
   "require": {
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
     "guzzlehttp/guzzle": "^6.3"
   },
   "require-dev": {

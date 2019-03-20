@@ -1,4 +1,5 @@
 <?php
+
 namespace Weibo;
 
 use Weibo\Hydrator\Feed;
@@ -21,6 +22,8 @@ class Hydrator
 
     /**
      * @return Feed
+     *
+     * @throws \Exception
      */
     public function getHydratedData()
     {

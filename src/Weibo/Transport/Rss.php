@@ -1,4 +1,5 @@
 <?php
+
 namespace Weibo\Transport;
 
 use GuzzleHttp\Client;
@@ -19,9 +20,8 @@ class Rss
     private $endpoint;
 
     /**
-     * FetchRss constructor.
      * @param Client $client
-     * @param $userId
+     * @param        $userId
      */
     public function __construct(Client $client, $userId)
     {
@@ -31,7 +31,9 @@ class Rss
 
     /**
      * @return \SimpleXMLElement
+     *
      * @throws WeiboException
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function fetch()
     {

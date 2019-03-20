@@ -1,4 +1,5 @@
 <?php
+
 namespace Weibo;
 
 use GuzzleHttp\Client;
@@ -18,7 +19,6 @@ class Api
     private $userId = '';
 
     /**
-     * Api constructor.
      * @param Client|null $client
      */
     public function __construct(Client $client = null)
@@ -36,7 +36,9 @@ class Api
 
     /**
      * @return Hydrator\Feed
+     *
      * @throws WeiboException
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getFeed()
     {
