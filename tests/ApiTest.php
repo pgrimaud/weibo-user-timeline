@@ -11,7 +11,9 @@ use Weibo\Exception\WeiboException;
 use Weibo\Hydrator\Feed;
 use Weibo\Hydrator\Item;
 
-class ApiTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ApiTest extends TestCase
 {
     /**
      * @var Client
@@ -23,7 +25,7 @@ class ApiTest extends \PHPUnit_Framework_TestCase
      */
     private $invalidClient;
 
-    public function setUp()
+    protected function setUp()
     {
         $validFixtures = file_get_contents(__DIR__ . '/fixtures/valid_rss.xml');
 
